@@ -7,6 +7,8 @@ export function DetalhesPet() {
     const [pets, setPets] = useState(null);
     const { id } = useParams();
 
+
+   
     useEffect(() => {
         axios
             .get(`http://localhost:3001/pets/${id}`)
@@ -31,6 +33,7 @@ export function DetalhesPet() {
                         <th>Tipo</th>
                         <th>Porte</th>
                         <th>Data de Nascimento</th>
+                        <th>Dono</th>
                         <th>Voltar</th>
                     </tr>
                 </thead>
