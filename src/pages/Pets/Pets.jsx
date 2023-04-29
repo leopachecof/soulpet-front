@@ -58,7 +58,7 @@ export function Pets() {
         <div className="clientes container">
              <div className="d-flex justify-content-between align-items-center">
              <h1>Pets</h1>
-                <Button as={Link} to="/pet/novo">
+                <Button as={Link} to="/pets/novo">
                     <i className="bi bi-plus-lg me-2"></i> Pet
                 </Button>
             </div>
