@@ -32,6 +32,7 @@ export function Clientes() {
             .catch(error => {
                 console.log(error);
             });
+            
     }
 
     function onDelete() {
