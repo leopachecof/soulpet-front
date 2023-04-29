@@ -33,7 +33,6 @@ export function DetalhesPet() {
                         <th>Tipo</th>
                         <th>Porte</th>
                         <th>Data de Nascimento</th>
-                        <th>Dono</th>
                         <th>Voltar</th>
                     </tr>
                 </thead>
