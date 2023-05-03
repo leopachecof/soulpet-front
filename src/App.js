@@ -6,14 +6,18 @@ import { Clientes } from "./pages/Clientes/Clientes";
 import { EditaCliente } from "./pages/EditaCliente/EditaCliente";
 import Produtos from "./pages/Produtos/Produtos";
 import EditaProduto from "./pages/EditaProduto/EditaProduto";
-import NovoProduto from "./pages/NovoProduto/NovoProduto";
+import { NovoProduto } from "./pages/NovoProduto/NovoProduto";
 import { Pets } from "./pages/Pets/Pets";
 import { DetalhesPet } from "./pages/DetalhesPets/DetalhesPets";
 import { EditaPet } from "./pages/EditaPet/EditaPet";
 import { NovoPet } from "./pages/NovoPet/NovoPet";
+import { Servicos } from "./pages/Servicos/Servicos";
+import { NovoServico } from "./pages/NovoServico/NovoServico";
+import { EditaServico } from "./pages/EditaServico/EditaServico";
 
 
 function App() {
+  
   return (
     <BrowserRouter>
       <Routes>
@@ -29,6 +33,9 @@ function App() {
           <Route path="/pets/:id" element={<DetalhesPet />} />
           <Route path="/pets/novo" element={<NovoPet />} />
           <Route path="/pets/editar/:id" element={<EditaPet />} />
+          <Route path="/servicos" element={<Servicos />} />
+          <Route path="/servicos/novo" element={<NovoServico />} />          
+          <Route path="/servicos/atualizar/:id" element={<EditaServico />} />          
         </Route>
       </Routes>
     </BrowserRouter>

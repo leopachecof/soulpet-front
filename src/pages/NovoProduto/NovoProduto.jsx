@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 
 
-export default function NovoProduto() {
+export function NovoProduto() {
 
 const {register, handleSubmit, formState: {errors}} = useForm()
 const navigate = useNavigate();
