@@ -1,21 +1,21 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Root } from "./pages/Root/Root";
 import { Home } from "./pages/Home/Home";
-import { NovoCliente } from "./pages/NovoCliente/NovoCliente";
 import { Clientes } from "./pages/Clientes/Clientes";
+import { NovoCliente } from "./pages/NovoCliente/NovoCliente";
 import { EditaCliente } from "./pages/EditaCliente/EditaCliente";
 import Produtos from "./pages/Produtos/Produtos";
-import EditaProduto from "./pages/EditaProduto/EditaProduto";
 import { NovoProduto } from "./pages/NovoProduto/NovoProduto";
+import EditaProduto from "./pages/EditaProduto/EditaProduto";
 import { Pets } from "./pages/Pets/Pets";
-import { DetalhesPet } from "./pages/DetalhesPets/DetalhesPets";
-import { EditaPet } from "./pages/EditaPet/EditaPet";
 import { NovoPet } from "./pages/NovoPet/NovoPet";
-import { Agendamentos } from "./pages/Agendamentos/Agendamentos";
-import { NovoAgendamento } from "./pages/NovoAgendamento/NovoAgendamento";
+import { EditaPet } from "./pages/EditaPet/EditaPet";
+import { DetalhesPet } from "./pages/DetalhesPets/DetalhesPets";
 import { Servicos } from "./pages/Servicos/Servicos";
 import { NovoServico } from "./pages/NovoServico/NovoServico";
 import { EditaServico } from "./pages/EditaServico/EditaServico";
+import { Agendamentos } from "./pages/Agendamentos/Agendamentos";
+import { NovoAgendamento } from "./pages/NovoAgendamento/NovoAgendamento";
 import { EditaAgendamento } from "./pages/EditaAgendamento/EditaAgendamento";
 
 

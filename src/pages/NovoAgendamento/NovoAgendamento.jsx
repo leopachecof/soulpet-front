@@ -4,7 +4,6 @@ import { Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
-// export default function NovoAgendamento() {
 export function NovoAgendamento() {
 
 const {register, handleSubmit, formState: {errors}} = useForm()
@@ -29,9 +28,7 @@ function onSubmit(data) {
         });
         console.log(error);
     });
-
 }
-
 
   return (
     <div className='container'>
@@ -62,9 +59,6 @@ function onSubmit(data) {
         
                     {errors.dataAgendada && <Form.Text className="invalid-feedback">{errors.dataAgendada.message}</Form.Text>}
                 </Form.Group>
-
-
-
 
                 <Button variant="primary" type="submit">
                     Cadastrar
