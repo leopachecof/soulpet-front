@@ -66,6 +66,7 @@ export function Clientes() {
                     <Table striped bordered hover>
                         <thead>
                             <tr>
+                                <th>ID</th>
                                 <th>Nome</th>
                                 <th>E-mail</th>
                                 <th>Telefone</th>
@@ -76,6 +77,7 @@ export function Clientes() {
                             {clientes.map(cliente => {
                                 return (
                                     <tr key={cliente.id}>
+                                        <td>{cliente.id}</td>
                                         <td>{cliente.nome}</td>
                                         <td>{cliente.email}</td>
                                         <td>{cliente.telefone}</td>
