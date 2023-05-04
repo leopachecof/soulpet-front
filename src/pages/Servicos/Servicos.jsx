@@ -70,6 +70,7 @@ export function Servicos() {
         <Table striped bordered hover>
           <thead>
             <tr>
+              <th>ID do Serviço</th>
               <th>Nome do Serviço</th>
               <th>Preço</th>
             </tr>
@@ -80,6 +81,7 @@ export function Servicos() {
                 const precoFormatado = formatter.format(servico.preco);
               return (
                 <tr key={servico.id}>
+                  <td>{servico.id}</td>
                   <td>{servico.nome}</td>
                   <td>{precoFormatado}</td>
                   <td className="d-flex gap-2">

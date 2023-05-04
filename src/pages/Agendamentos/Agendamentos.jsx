@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 import { Loader } from "../../components/Loader/Loader";
 import { toast } from "react-hot-toast";
 
-export default function Agendamentos() {
+// export default function Agendamentos() {
+export function Agendamentos() {
   const [agendamentos, setAgendamentos] = useState(null);
   const [show, setShow] = useState(false);
   const [idAgendamento, setIdAgendamento] = useState(null);

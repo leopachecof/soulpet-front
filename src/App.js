@@ -11,11 +11,12 @@ import { Pets } from "./pages/Pets/Pets";
 import { DetalhesPet } from "./pages/DetalhesPets/DetalhesPets";
 import { EditaPet } from "./pages/EditaPet/EditaPet";
 import { NovoPet } from "./pages/NovoPet/NovoPet";
-import Agendamentos from "./pages/Agendamentos/Agendamentos";
-import NovoAgendamento from "./pages/NovoAgendamento/NovoAgendamento";
+import { Agendamentos } from "./pages/Agendamentos/Agendamentos";
+import { NovoAgendamento } from "./pages/NovoAgendamento/NovoAgendamento";
 import { Servicos } from "./pages/Servicos/Servicos";
 import { NovoServico } from "./pages/NovoServico/NovoServico";
 import { EditaServico } from "./pages/EditaServico/EditaServico";
+import { EditaAgendamento } from "./pages/EditaAgendamento/EditaAgendamento";
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           <Route path="/pets/editar/:id" element={<EditaPet />} />
           <Route path="/agendamentos" element={<Agendamentos />} />
           <Route path="/agendamentos/novo" element={<NovoAgendamento />} />
+          <Route path="/agendamentos/editar/:id" element={<EditaAgendamento />} />
           <Route path="/servicos" element={<Servicos />} />
           <Route path="/servicos/novo" element={<NovoServico />} />          
           <Route path="/servicos/atualizar/:id" element={<EditaServico />} />          

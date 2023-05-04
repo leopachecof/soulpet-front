@@ -4,15 +4,14 @@ import { Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
-
-
-
-export default function NovoAgendamento() {
+// export default function NovoAgendamento() {
+export function NovoAgendamento() {
 
 const {register, handleSubmit, formState: {errors}} = useForm()
 const navigate = useNavigate();
 
 function onSubmit(data) {
+    console.log(data)
 
     axios
     .post("http://localhost:3001/agendamentos", data)
@@ -46,13 +45,14 @@ function onSubmit(data) {
 
                 <Form.Group className="mb-3">
                     <Form.Label>Serviço</Form.Label>
-                    <Form.Control type="number" className={errors.servico && "is-invalid"} {...register("servico", { required: "O ID de serviço é obrigatório."})} />
-                    {errors.servico && <Form.Text className="invalid-feedback">{errors.servico.message}</Form.Text>}
+                    <Form.Control type="number" className={errors.servicoId && "is-invalid"} {...register("servicoId", { required: "O ID de serviço é obrigatório."})} />
+                    {errors.servicoId && <Form.Text className="invalid-feedback">{errors.servicoId.message}</Form.Text>}
                 </Form.Group>
 
                 <Form.Group className="mb-3">
                     <Form.Label>Descrição</Form.Label>
-                    <Form.Control type="text" {...register("descricao")} />
+                    <Form.Control type="string" className={errors.descricao && "is-invalid"} {...register("descricao", { required: "Descrição é obrigatória."})} />
+                    {errors.descricao && <Form.Text className="invalid-feedback">{errors.descricao.message}</Form.Text>}
                     
                 </Form.Group>
 
