@@ -14,8 +14,8 @@ export function Header() {
                     <Link to="/pets">Pets</Link>
                     <Link to="/produtos">Produtos</Link>
                     <Link to="/servicos">Serviços</Link>
+                    <Link to="/dashboard">Informações do sistema</Link>
                     <Link to="/agendamentos">Agendamentos</Link>
-
                 </div>
             </nav>
         </header>

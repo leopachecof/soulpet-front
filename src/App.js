@@ -14,10 +14,10 @@ import { DetalhesPet } from "./pages/DetalhesPets/DetalhesPets";
 import { Servicos } from "./pages/Servicos/Servicos";
 import { NovoServico } from "./pages/NovoServico/NovoServico";
 import { EditaServico } from "./pages/EditaServico/EditaServico";
+import InfoSistema from "./pages/InfoSistema/InfoSistema";
 import { Agendamentos } from "./pages/Agendamentos/Agendamentos";
 import { NovoAgendamento } from "./pages/NovoAgendamento/NovoAgendamento";
 import { EditaAgendamento } from "./pages/EditaAgendamento/EditaAgendamento";
-
 
 function App() {
   
@@ -41,7 +41,8 @@ function App() {
           <Route path="/agendamentos/editar/:id" element={<EditaAgendamento />} />
           <Route path="/servicos" element={<Servicos />} />
           <Route path="/servicos/novo" element={<NovoServico />} />          
-          <Route path="/servicos/atualizar/:id" element={<EditaServico />} />          
+          <Route path="/servicos/atualizar/:id" element={<EditaServico />} />     
+          <Route path="/dashboard" element ={<InfoSistema></InfoSistema>}></Route>     
         </Route>
       </Routes>
     </BrowserRouter>
