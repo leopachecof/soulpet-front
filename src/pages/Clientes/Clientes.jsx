@@ -48,6 +48,8 @@ export function Clientes() {
         handleClose();
     }
 
+   
+
     return (
         <div className="clientes container">
             <div className="d-flex justify-content-between align-items-center">
@@ -56,6 +58,7 @@ export function Clientes() {
                     <i className="bi bi-plus-lg me-2"></i> Cliente
                 </Button>
             </div>
+            
             {
                 clientes === null ?
                     <Loader />
@@ -90,6 +93,10 @@ export function Clientes() {
                                 )
                             })}
                         </tbody>
+                        <br></br>
+                        <Button onClick={() => window.open('http://localhost:3001/clientes/relatorio')}>
+                        <i class="bi bi-newspaper"></i> Gerar relatório
+                </Button>
                     </Table>
             }
             <Modal show={show} onHide={handleClose}>
