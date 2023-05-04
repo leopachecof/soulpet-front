@@ -14,6 +14,7 @@ import { NovoPet } from "./pages/NovoPet/NovoPet";
 import { Servicos } from "./pages/Servicos/Servicos";
 import { NovoServico } from "./pages/NovoServico/NovoServico";
 import { EditaServico } from "./pages/EditaServico/EditaServico";
+import InfoSistema from "./pages/InfoSistema/InfoSistema";
 
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
           <Route path="/pets/editar/:id" element={<EditaPet />} />
           <Route path="/servicos" element={<Servicos />} />
           <Route path="/servicos/novo" element={<NovoServico />} />          
-          <Route path="/servicos/atualizar/:id" element={<EditaServico />} />          
+          <Route path="/servicos/atualizar/:id" element={<EditaServico />} />     
+          <Route path="/dashboard" element ={<InfoSistema></InfoSistema>}></Route>     
         </Route>
       </Routes>
     </BrowserRouter>
