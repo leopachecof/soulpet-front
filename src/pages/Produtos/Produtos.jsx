@@ -13,7 +13,10 @@ export default function Produtos() {
   const [idProduto, setIdProduto] = useState(null);
   const [search, setSearch] = useState("");
   const [produtosFilter, setProdutosFilter] = useState([])
-  const produtosFiltrados = produtosFilter.filter(produto => produto.nome.toLowerCase().includes(search.toLowerCase()) || produto.categoria.toLowerCase().includes(search.toLowerCase())   );
+  
+  const produtosFiltrados = produtosFilter.filter(
+    produto => produto.nome.toLowerCase().includes(search.toLowerCase()) || 
+    produto.categoria.toLowerCase().includes(search.toLowerCase())   );
 
 
   const handleClose = () => {

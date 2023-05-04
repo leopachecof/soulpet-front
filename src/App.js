@@ -11,6 +11,8 @@ import { Pets } from "./pages/Pets/Pets";
 import { DetalhesPet } from "./pages/DetalhesPets/DetalhesPets";
 import { EditaPet } from "./pages/EditaPet/EditaPet";
 import { NovoPet } from "./pages/NovoPet/NovoPet";
+import Agendamentos from "./pages/Agendamentos/Agendamentos";
+import NovoAgendamento from "./pages/NovoAgendamento/NovoAgendamento";
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
           <Route path="/pets/:id" element={<DetalhesPet />} />
           <Route path="/pets/novo" element={<NovoPet />} />
           <Route path="/pets/editar/:id" element={<EditaPet />} />
+          <Route path="/agendamentos" element={<Agendamentos />} />
+          <Route path="/agendamentos/novo" element={<NovoAgendamento />} />
         </Route>
       </Routes>
     </BrowserRouter>
