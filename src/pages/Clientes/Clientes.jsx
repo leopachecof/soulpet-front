@@ -82,11 +82,14 @@ export function Clientes() {
                                         <td>{cliente.email}</td>
                                         <td>{cliente.telefone}</td>
                                         <td className="d-flex gap-2">
-                                            <Button onClick={() => handleShow(cliente.id)}>
-                                                <i className="bi bi-trash-fill"></i>
+                                            <Button as={Link} to={`/clientes/${cliente.id}`}>
+                                                <i class="bi bi-eye"></i>
                                             </Button>
                                             <Button as={Link} to={`/clientes/editar/${cliente.id}`}>
                                                 <i className="bi bi-pencil-fill"></i>
+                                            </Button>
+                                            <Button onClick={() => handleShow(cliente.id)}>
+                                                <i className="bi bi-trash-fill"></i>
                                             </Button>
                                         </td>
                                     </tr>

@@ -18,6 +18,7 @@ import InfoSistema from "./pages/InfoSistema/InfoSistema";
 import { Agendamentos } from "./pages/Agendamentos/Agendamentos";
 import { NovoAgendamento } from "./pages/NovoAgendamento/NovoAgendamento";
 import { EditaAgendamento } from "./pages/EditaAgendamento/EditaAgendamento";
+import { DetalhesClientes } from "./pages/DetalhesClientes/DetalhesClientes";
 
 function App() {
   
@@ -27,6 +28,7 @@ function App() {
         <Route path="/" element={<Root />}>
           <Route path="/" element={<Home />} />
           <Route path="/clientes" element={<Clientes />} />
+          <Route path="/clientes/:id" element={<DetalhesClientes />} />
           <Route path="/clientes/novo" element={<NovoCliente />} />
           <Route path="/clientes/editar/:id" element={<EditaCliente />} />
           <Route path="/produtos" element={<Produtos></Produtos>}></Route>
